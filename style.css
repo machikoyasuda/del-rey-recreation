@@ -1,0 +1,69 @@
+#table {
+  background-color: wheat;
+  margin: 0;
+}
+
+#envelope {
+  background: linear-gradient(#ffffff, #ffffff) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, #ffffff 0, #ffffff 25%, #58a 0, #58a 37.5%, #ffffff 0, #ffffff 50%) 0 / 5em 5em;
+  border: 1em solid transparent;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.45);
+  height: 80vh;
+  margin: 4vh;
+  padding: 1em;
+  position: relative;
+}
+
+.address {
+  font-family: Courier, monospace;
+  font-size: .8em;
+}
+
+dl {
+  margin: 0;
+}
+
+#to {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+#return {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.stamp {
+  width: 4em;
+  height: 4em;
+}
+
+.stamp path {
+  fill: orange;
+}
+
+.stamp svg {
+  display: block;
+  overflow: visible;
+}
+
+.stamp text {
+  font-family: Courier New, monospace;
+}
+
+h1 {
+  border: 1px solid #000000;
+  display: inline-block;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: absolute;
+  right: 1em;
+  bottom: 3em;
+  transform: rotate(-30deg);
+}
