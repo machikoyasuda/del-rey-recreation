@@ -6,16 +6,18 @@
 #envelope {
   background: linear-gradient(#ffffff, #ffffff) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, #ffffff 0, #ffffff 25%, #58a 0, #58a 37.5%, #ffffff 0, #ffffff 50%) 0 / 5em 5em;
   border: 1em solid transparent;
-  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.45);
   height: 80vh;
   margin: 4vh;
-  padding: 1em;
   position: relative;
+}
+
+#envelope:hover {
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.45);
 }
 
 .address {
   font-family: Courier, monospace;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 dl {
@@ -36,8 +38,9 @@ dl {
 }
 
 .stamp {
-  width: 4em;
   height: 4em;
+  width: 4em;
+  padding: 0.4em;
 }
 
 .stamp path {
@@ -66,4 +69,28 @@ h1 {
   right: 1em;
   bottom: 3em;
   transform: rotate(-30deg);
+}
+
+a {
+  cursor: crosshair;
+  display: block;
+}
+
+a:-webkit-any-link {
+  color: black;
+}
+
+#paper {
+  background-image: linear-gradient(#58a 1px, transparent 0),       linear-gradient(rgba(200,0,0,.5) 100%, transparent 0);
+  background-size: 2em;
+  background-blend-mode: color-dodge;
+  background-position-y: 95px;
+  height: 100%;
+  width: 100%
+}
+
+.typewriter {
+  font-size: 2em;
+  font-family: Courier, monospace;
+  width: 10em;
 }
